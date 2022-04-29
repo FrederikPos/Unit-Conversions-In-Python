@@ -15,12 +15,17 @@ while True:
       print("I did'nt get that. Please open up the script again and try again.")
       quit()
  else:
-   if answer.lower()=='f':
+   if answer.lower()=='n':
+    print("Bye!")
+    quit()
+
+   else:
+    if answer.lower()=='f':
      answer=input("F° to C° or C° to F° (Type the letters in lowercase and in order of how you want to convert e.g. fc for F° to C°)")
      if answer.lower()=='cf':
-       Celsius = int(input("How much celsius do you wanna convert?"))
-       Fahrenheit = Celsius * 9 / 5 + 32
-       print("Your initial", Celsius, "Celsius is now", Fahrenheit, "Fahrenheit!")
+      Celsius = int(input("How much celsius do you wanna convert?"))
+      Fahrenheit = Celsius * 9 / 5 + 32
+      print("Your initial", Celsius, "Celsius is now", Fahrenheit, "Fahrenheit!")
      else:
       if answer.lower()=='fc':
         Fahrenheit = int(input("How much Fahrenheit do you wanna convert?"))
